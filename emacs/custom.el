@@ -8,7 +8,6 @@
  '(ps-print-color-p nil t)
  '(query-user-mail-address nil)
  '(toolbar-visible-p nil)
- '(user-mail-address "mbrandy@austin.ibm.com")
  '(zmacs-regions t))
 (custom-set-faces
  '(custom-comment-face ((((class grayscale color) (background light)) (:foreground "white" :background "gray20"))))

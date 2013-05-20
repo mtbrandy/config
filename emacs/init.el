@@ -1,17 +1,17 @@
 (global-set-key "\M-s" 'speedbar)
 
-(defun scroll-up-five (event)
-  "Scroll up five lines."
-  (interactive "e")
-  (scroll-up 5)
-  )
-(defun scroll-down-five (event)
-  "Scroll down five lines."
-  (interactive "e")
-  (scroll-down 5)
-  )
-(global-set-key 'button5 'scroll-up-five)
-(global-set-key 'button4 'scroll-down-five)
+;(defun scroll-up-five (event)
+;  "Scroll up five lines."
+;  (interactive "e")
+;  (scroll-up 5)
+;  )
+;(defun scroll-down-five (event)
+;  "Scroll down five lines."
+;  (interactive "e")
+;  (scroll-down 5)
+;  )
+;(global-set-key 'button5 'scroll-up-five)
+;(global-set-key 'button4 'scroll-down-five)
 
 (defun mtb-c-mode-common-hook ()
   (c-set-style "k&r")
