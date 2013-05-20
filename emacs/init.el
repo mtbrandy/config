@@ -1,20 +1,3 @@
-;(server-start)
-
-; (load-file "~/emacs/.cscope/cscope.init")
-
-; This loads beam-parse.el every time emacs is started.
-; Make sure to change 'install_point' to the directory where
-; beam-parse.el is located, like '/opt/beam/2.1/etc'.
-(setq load-path (cons "~/emacs" load-path))
-;(require 'beam-parse)
-
-;(defun all-c-mode-hooks ()
-;   "call all c-mode hooks in order"
-;   (cscope-c-mode-hook)
-;)
-
-;(add-hook 'c-mode-common-hook 'all-c-mode-hooks)
-
 (global-set-key "\M-s" 'speedbar)
 
 (defun scroll-up-five (event)
@@ -46,9 +29,6 @@
 ; do the same for assembly and m4 files
 (setq auto-mode-alist (cons '("\\.s\\'" . c-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.m4\\'" . c-mode) auto-mode-alist))
-
-; "Fix" backspace by assigning c-h to the same function
-;(define-key global-map "\C-h" 'backward-delete-char)
 
 (setq-default default-tab-width 8)
 
