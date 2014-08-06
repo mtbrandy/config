@@ -1,0 +1,14 @@
+[user]
+	name = Matthew Brandyberry
+	email = mbrandy@us.ibm.com
+[color]
+	ui = auto
+[core]
+	editor = /usr/bin/xemacs -nw
+	excludesfile = /home/mbrandy/.gitignore
+
+[alias]
+        slog = log --pretty=format:'%C(yellow)%h%C(bold red)%d %Creset%s %Cgreen(%cr) %C(blue)<%an>%Creset' --first-parent
+        glog = log --pretty=format:'%C(yellow)%h%C(bold red)%d %Creset%s %Cgreen(%cr) %C(blue)<%an>%Creset' --graph
+
+	branches = branch -v
