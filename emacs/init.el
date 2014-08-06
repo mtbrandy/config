@@ -15,7 +15,7 @@
 
 (defun mtb-c-mode-common-hook ()
   (c-set-style "k&r")
-  (setq c-basic-offset 4)
+  (setq c-basic-offset 2)
   (setq-default indent-tabs-mode nil))
 
 (add-hook 'c-mode-common-hook 'mtb-c-mode-common-hook)
@@ -24,9 +24,9 @@
 (setq vm-use-toolbar nil)
 (setq mail-archive-file-name "~/OUTBOX")
 
-; allow .*\.[cCh]\..* files to have c-style syntax highlighting
-(setq auto-mode-alist (cons '("\\.[cCh].*\\'" . c-mode) auto-mode-alist))
-; do the same for assembly and m4 files
+(setq auto-mode-alist (cons '("\\.h\\'" . c++-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.cc\\'" . c++-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.c\\'" . c-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.s\\'" . c-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.m4\\'" . c-mode) auto-mode-alist))
 
